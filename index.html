@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> my potfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/81040e69f2.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div id="header">
@@ -30,7 +31,7 @@
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
-                    <img src="images/user.png">
+                    <img src="images/b1.jpg">
                 </div>
                 <div class="about-col-2">
                 <h1 class="sub-title">About Me</h1>
@@ -40,14 +41,155 @@
                      interfaces on the frontend. With a background in computer science and a keen eye for user experience,
                       I bring a holistic approach to software development. </p>
                       <div class="tab-titles">
-                        <p class="tab-links">skills </p>
-                        <p class="tab-links">experience </p>
-                        <p class="tab-links">Education </p>
+                        <p class="tab-links active-link" onclick="opentab('skills')">skills </p>
+                        <p class="tab-links" onclick="opentab('experience')">experience </p>
+                        <p class="tab-links" onclick="opentab('Education')">Education </p>
                       </div>
+                      <div class="tab-contents active-tab" id="skills">
+                       <ul>
+                        <li><span>WEB DEVELOPMENT</span><br>Web applications development</li>
+                        <li><span>APP  DEVELOPMENT</span><br>mobile applicatios for both android& ios</li>
+                        <li><span>WEB DESIGN</span><br>Web design through figma and other tools</li>
+                        <li><span>UI/UX</span><br>Designing web app interfaces</li>
+                    </ul>
+                      </div>
+                      <div class="tab-contents" id="experience" >
+                        <ul>
+                         <li><span>2020-curent</span><br>microsoft Kenya</li>
+                         <li><span>2018-2020</span><br>Andela Kenya</li>
+                         <li><span>2017-2018</span><br>kenya judiciary</li>
+                         <li><span>2015-2017</span><br>Centum firm</li>
+                     </ul>
+                       </div>
+                       <div class="tab-contents" id="Education">
+                        <ul>
+                         <li><span>2010-2013</span><br>Bachalors in computer science at Multimedia university</li>
+                         <li><span>2013-2014</span><br>UI/UX diploma at zetech university</li>
+                         <li><span>2014-2015</span><br>data science certification at Moringa school</li>
+                         
+                     </ul>
+                 </div>
             </div>
         </div>
         </div>
     </div>
+
+
+
+
+    <div id="sevices">
+        <div class="container">
+            <h1 class="sub-title">my services</h1>
+            <div class="sevices-list">
+                <div>
+                    <i class="fa-brands fa-figma fa-beat-fade" style="color: #38db0a;"></i>
+                    <h2>web design</h2>
+                    <p> I am well diverse with both the design tools and frontend languagges <br>
+                        which makes me a better web designer apart from development</p>
+                        <a href="#">learn more</a>
+                </div>
+                <div> 
+                    <i class="fa-solid fa-code fa-flip" style="color: #050ce1;"></i>
+                    <h2>UI/UX design</h2>
+                    <p> I am well diverse with both the design tools and frontend languagges <br>
+                        which makes me a better web designer apart from development</p>
+                        <a href="#">learn more</a>
+                </div>
+                <div> 
+                    <i class="fa-brands fa-react" style="color: #f00505;"></i>
+                    <h2>APP design</h2>
+                    <p> I am well diverse with both the design tools and frontend languagges <br>
+                        which makes me a better web designer apart from development</p>
+                        <a href="#">learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
     
+
+
+
+
+    <div id="potfolio">
+        <div class="container">
+            <h1 class="sub-title">my work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>SOCIAL MEDIA APP</h3>
+                        <p>I have created a social media platform called snapchart
+                             <br>where one can communicate to any one globaly</p>
+                             <a href="#"><i class="fa-solid fa-square-arrow-up-right fa-beat"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>MUSIC APP</h3>
+                        <p>I have build the music application sportify
+                             <br>where one can listen to any music of their choice</p>
+                             <a href="#"><i class="fa-solid fa-square-arrow-up-right fa-beat"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>ONLINE SHOPPING APP</h3>
+                        <p>I have build the famous e-comerse website jumia
+                             <br>where one can order any items online and they are delivered to them</p>
+                             <a href="#"><i class="fa-solid fa-square-arrow-up-right fa-beat"></i></a>
+                    </div>
+                </div>
+            </div>
+<a href="#"class="btn">see more</a>
+        </div>
+    </div>
+  
+
+
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact me</h1>
+                    <p>lenox1739@gmail.com</p>
+                    <p>0708756517</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram" style="color: #e83b5d;"></i></a>
+                        <a href=""><i class="fa-brands fa-github"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        
+                        
+                    </div>
+
+                </div>
+                <div class="contact-right">
+                    <input type="text"name="Name"placholder="Enter your name"required>
+                    <input type="email" name="email"placholder="Your Email"required>
+                   <textarea name="message"  rows="6" placeholder="your message"></textarea>
+                   <button type="submit">submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+
+           var tablinks = document.getElementsByClassName("tab-links");
+           var tabcontents = document.getElementsByClassName("tab-contents");
+           function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+           }
+
+    </script>
 </body>
-</html>
+</html>    
