@@ -325,7 +325,7 @@ form input,form textarea{
     margin-top: 20px;
     
 }
-.nav.fa-solid {
+.nav.fas {
     display: none;
 }
 
@@ -342,10 +342,7 @@ form input,form textarea{
  .header-text h1{
     font-size: 30px;
  }
- .nav.fa-solid{
-    display:block;
-    font-size: 25px;
-}
+ 
 
 }
 
